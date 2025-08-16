@@ -21,32 +21,4 @@ This is a beginner-friendly SQL project for managing a simple library system usi
 2. Run `sample_data.sql` to add example records
 3. Execute queries from `queries.sql` to explore data
 
-Perfect for students, portfolio projects, or MySQL practice.
-
----
-
-🔐 All files are read-only. You can upload this directly to GitHub.
-"""
-
-# Write files to the project directory
-file_contents = {
-    "schema.sql": schema_sql,
-    "sample_data.sql": sample_data_sql,
-    "queries.sql": queries_sql,
-    "README.md": readme_md,
-}
-
-for filename, content in file_contents.items():
-    with open(os.path.join(project_dir, filename), "w") as f:
-        f.write(content)
-
-# Create a ZIP file
-zip_path = "/mnt/data/library-sql-project.zip"
-with ZipFile(zip_path, "w") as zipf:
-    for filename in file_contents:
-        file_path = os.path.join(project_dir, filename)
-        zipf.write(file_path, arcname=f"library-sql-project/{filename}")
-
-zip_path
-Result
-'/mnt/data/library-sql-project.zip'
+Perfect for students, portfolio projects, or for practice

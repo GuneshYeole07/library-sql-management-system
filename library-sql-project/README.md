@@ -22,6 +22,4 @@ This is a beginner-friendly SQL project for managing a simple library system usi
 
 Perfect for students, portfolio projects, or MySQL practice.
 
----
 
-🔐 All files are read-only. You can upload this directly to GitHub.
